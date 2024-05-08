@@ -1,0 +1,13 @@
+
+
+    <app-hijo1 [mensajes]="mensajes2" (mensajeEnviado)="recibirMensaje($event, 1)"></app-hijo1>
+
+    <div *ngFor="let item1 of mensajes1">
+            <p>{{ item1 }}</p>
+    </div>
+    <app-hijo2 [mensajes]="mensajes1" (mensajeEnviado)="recibirMensaje($event, 2)"></app-hijo2>
+    <div *ngFor="let item2 of mensajes2">
+        <p>{{ item2 }}</p>
+    </div>
+
+
